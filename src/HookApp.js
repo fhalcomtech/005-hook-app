@@ -1,4 +1,6 @@
+import { CounterApp } from "./Component/001-use-state/CounterApp";
+
 const HookApp = () => (<>
-        <div>Hola Mundo</div>
+        <CounterApp/>
     </>);
 export default HookApp;
