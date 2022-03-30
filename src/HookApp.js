@@ -3,8 +3,9 @@ import { CounterWithCustomHook } from "./Component/001-use-state/CounterWithCust
 import { FormWithCustomHook } from "./Component/002-use-effect/FormWithCustomHook";
 import { SimpleForm } from "./Component/002-use-effect/SimpleForm";
 import {MultipleCustomHook} from "./Component/002-use-effect/MultipleCustomHook";
+import FocusScreen from "./Component/004-use-ref/FocusScreen";
 
 const HookApp = () => (<>
-        <MultipleCustomHook/>
+        <FocusScreen/>
     </>);
 export default HookApp;
