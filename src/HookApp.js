@@ -4,8 +4,7 @@ import { FormWithCustomHook } from "./Component/002-use-effect/FormWithCustomHoo
 import { SimpleForm } from "./Component/002-use-effect/SimpleForm";
 import {MultipleCustomHook} from "./Component/002-use-effect/MultipleCustomHook";
 import FocusScreen from "./Component/004-use-ref/FocusScreen";
+import { Layout } from "./Component/005-use-layout-efect/Layout";
 
-const HookApp = () => (<>
-        <FocusScreen/>
-    </>);
+const HookApp = () => (<><Layout/></>);
 export default HookApp;
