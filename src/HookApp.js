@@ -5,6 +5,7 @@ import { SimpleForm } from "./Component/002-use-effect/SimpleForm";
 import {MultipleCustomHook} from "./Component/002-use-effect/MultipleCustomHook";
 import FocusScreen from "./Component/004-use-ref/FocusScreen";
 import { Layout } from "./Component/005-use-layout-efect/Layout";
+import { Memorize } from "./Component/006-memos/Memorize";
 
-const HookApp = () => (<><Layout/></>);
+const HookApp = () => (<><Memorize/></>);
 export default HookApp;
