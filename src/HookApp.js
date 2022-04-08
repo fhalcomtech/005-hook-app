@@ -6,6 +6,8 @@ import {MultipleCustomHook} from "./Component/002-use-effect/MultipleCustomHook"
 import FocusScreen from "./Component/004-use-ref/FocusScreen";
 import { Layout } from "./Component/005-use-layout-efect/Layout";
 import { Memorize } from "./Component/006-memos/Memorize";
+import MemoHook from "./Component/006-memos/MemoHook";
+import CallbackHook from "./Component/006-memos/CallbackHook";
 
-const HookApp = () => (<><Memorize/></>);
+const HookApp = () => (<><CallbackHook/></>);
 export default HookApp;
