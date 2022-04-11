@@ -8,6 +8,8 @@ import { Layout } from "./Component/005-use-layout-efect/Layout";
 import { Memorize } from "./Component/006-memos/Memorize";
 import MemoHook from "./Component/006-memos/MemoHook";
 import CallbackHook from "./Component/006-memos/CallbackHook";
+import {Padre} from "./Component/007-tarea-memo/Padre";
+import TodoApp from "./Component/008-use-reducer/TodoApp";
 
-const HookApp = () => (<><CallbackHook/></>);
+const HookApp = () => (<><TodoApp/></>);
 export default HookApp;
