@@ -2,31 +2,30 @@ import React, {useEffect, useReducer} from "react";
 import {useForm} from "../../hooks/useForm";
 import todoReducer from "./todoReducer";
 
-const initialState = [
-    {
-        id: new Date().getTime(),
-        desc: "Learn react",
-        done: false,
-    },
-];
+const initialState = [];
+
+const init = () => JSON.parse(localStorage.getItem("todos")) || initialState;
+
 const TodoApp = () => {
-    const [todos, dispatch] = useReducer(todoReducer, initialState,);
+    const [todos, dispatch] = useReducer(todoReducer, initialState, init);
     const [formData, handlerInputChange, resetForm] = useForm({todoDesc: ""});
     const {todoDesc} = formData;
 
     const handlerSubmit = (e) => {
         e.preventDefault();
-        const newTodo = {
-            id: new Date().getTime(),
-            desc: todoDesc,
-            done: false,
+        if(todoDesc && todoDesc.length > 3 ) {
+            const newTodo = {
+                id: new Date().getTime(),
+                desc: todoDesc,
+                done: false,
+            }
+            const action = {
+                type: 'add',
+                payload: newTodo
+            };
+            dispatch(action);
+            resetForm();
         }
-        const action = {
-            type: 'add',
-            payload: newTodo
-        };
-        dispatch(action);
-        resetForm({todoDesc: ""});
     };
 
     useEffect(() => {
@@ -44,6 +43,13 @@ const TodoApp = () => {
     }
 
 
+    const handlerClickDone = (todo) => {
+        const action = {
+            type: 'done',
+            payload: todo
+        };
+        dispatch(action);
+    }
 
     return (
         <>
@@ -54,7 +60,9 @@ const TodoApp = () => {
                     <ul className="list-group list-group-flush">
                         {todos.map(({id, desc, done}, index) => (
                             <li className="list-group-item d-flex justify-content-around" key={id}>
-                                    {index + 1}. {desc}
+                                <p onClick={(e)=>{handlerClickDone({id, desc, done:!done})}} className={ done && 'text-decoration-line-through' }>
+                                    {index + 1}. {desc}    
+                                </p>    
                                 <button className="btn btn-danger" onClick={(e)=>{
                                     handlerClickDelete({id,desc,done})
                                 }}>delete</button>
