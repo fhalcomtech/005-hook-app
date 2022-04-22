@@ -8,6 +8,7 @@ import AboutScreen from "./AboutScreen";
 import LoginScreen from "./LoginScreen";
 import HomeScreen from "./HomeScreen";
 import NavBar from "./NavBar";
+import UserScreen from "./UserScreen";
 const AppRouter = () => {
     return (
         <Router>
@@ -16,6 +17,7 @@ const AppRouter = () => {
                     <Route path="/"     element={<HomeScreen/>}/>
                     <Route path="about" element={<AboutScreen/>}/>
                     <Route path="login" element={<LoginScreen/>}/>
+                    <Route path="user"  element={<UserScreen/>}/>
                     <Route path="home"  element={<HomeScreen/>}/>
                 </Routes>
         </Router>
