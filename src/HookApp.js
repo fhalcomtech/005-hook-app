@@ -14,5 +14,6 @@ import React from 'react';
 
 import MainApp from "./Component/009-use-context/MainApp";
 
-const HookApp = () => (<><MainApp/></>);
+//const HookApp = () => (<><MainApp/></>);
+const HookApp = () => (<div><h1>Hola Mundo</h1></div>);
 export default HookApp;
