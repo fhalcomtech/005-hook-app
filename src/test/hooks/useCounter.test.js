@@ -71,7 +71,6 @@ describe("Testing use counter", ()=>{
 
     test("test useCounter functions less increment -5",(done)=>{
         const initial = 100, increment = 5;
-
         const {result}=renderHook(() => useCounter({initial, increment}));
         expect(result.current.counter).toBe(100);
         act(()=> {result.current.less();});

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing MultipleCustomHooks file MultipleCustomHooks create new snapshopt 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <h1>
+      <span
+        className="badge bg-primary"
+      >
+        MultipleCustomHook
+      </span>
+    </h1>
+  </div>
+  <div
+    className="container alert alert-primary"
+  >
+    Loading...
+  </div>
+</Fragment>
+`;
