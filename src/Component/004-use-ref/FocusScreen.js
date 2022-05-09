@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react';
 import {useForm} from "../../hooks/useForm";
 
 const FocusScreen = () => {
-    const [formData, handlerInputChange] =useForm({name: ''});
+    const [formData, handlerInputChange] = useForm({name: ''});
     const {name} = formData;
     const refText = useRef();
 

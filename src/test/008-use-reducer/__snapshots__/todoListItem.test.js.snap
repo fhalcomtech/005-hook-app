@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing todoListItem Testing todoListItem create snapshot 1`] = `
+<li
+  className="list-group-item d-flex justify-content-around"
+  key="1"
+>
+  <p
+    className={false}
+    onClick={[Function]}
+  >
+    1
+    . 
+    Learn React
+  </p>
+  <button
+    className="btn btn-danger"
+    onClick={[Function]}
+  >
+    delete
+  </button>
+</li>
+`;
