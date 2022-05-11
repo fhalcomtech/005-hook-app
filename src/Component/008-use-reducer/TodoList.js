@@ -11,6 +11,7 @@ const TodoList = ({todos, handlerClickDone, handlerClickDelete}) => {
                         index={index}
                         handlerClickDelete={handlerClickDelete}
                         handlerClickDone={handlerClickDone}
+                        key={todo.id}
                     />)
                 )}
             </ul>

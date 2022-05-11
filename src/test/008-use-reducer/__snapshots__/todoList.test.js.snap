@@ -1,40 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing TodoList Testing TodoList  1`] = `
-<div
-  className="col-7"
->
-  <ul
-    className="list-group list-group-flush"
-  >
-    <TodoListItem
-      handlerClickDelete={[MockFunction]}
-      handlerClickDone={[MockFunction]}
-      index={0}
-      todo={
-        Object {
-          "desc": "Learn React",
-          "done": false,
-          "id": 1,
-        }
-      }
-    />
-    <TodoListItem
-      handlerClickDelete={[MockFunction]}
-      handlerClickDone={[MockFunction]}
-      index={1}
-      todo={
-        Object {
-          "desc": "Learn Root",
-          "done": false,
-          "id": 2,
-        }
-      }
-    />
-  </ul>
-</div>
-`;
-
 exports[`Testing TodoList Testing TodoList Snapshot 1`] = `
 <div
   className="col-7"
@@ -46,6 +11,7 @@ exports[`Testing TodoList Testing TodoList Snapshot 1`] = `
       handlerClickDelete={[MockFunction]}
       handlerClickDone={[MockFunction]}
       index={0}
+      key="1"
       todo={
         Object {
           "desc": "Learn React",
@@ -58,41 +24,7 @@ exports[`Testing TodoList Testing TodoList Snapshot 1`] = `
       handlerClickDelete={[MockFunction]}
       handlerClickDone={[MockFunction]}
       index={1}
-      todo={
-        Object {
-          "desc": "Learn Root",
-          "done": false,
-          "id": 2,
-        }
-      }
-    />
-  </ul>
-</div>
-`;
-
-exports[`Testing TodoList Testing TodoList Snapshot 2`] = `
-<div
-  className="col-7"
->
-  <ul
-    className="list-group list-group-flush"
-  >
-    <TodoListItem
-      handlerClickDelete={[MockFunction]}
-      handlerClickDone={[MockFunction]}
-      index={0}
-      todo={
-        Object {
-          "desc": "Learn React",
-          "done": false,
-          "id": 1,
-        }
-      }
-    />
-    <TodoListItem
-      handlerClickDelete={[MockFunction]}
-      handlerClickDone={[MockFunction]}
-      index={1}
+      key="2"
       todo={
         Object {
           "desc": "Learn Root",
