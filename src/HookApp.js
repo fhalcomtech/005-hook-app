@@ -10,10 +10,10 @@ import React from 'react';
 //import MemoHook from "./Component/006-memos/MemoHook";
 //import CallbackHook from "./Component/006-memos/CallbackHook";
 //import {Padre} from "./Component/007-tarea-memo/Padre";
-//import TodoApp from "./Component/008-use-reducer/TodoApp";
+import TodoApp from "./Component/008-use-reducer/TodoApp";
 
-import MainApp from "./Component/009-use-context/MainApp";
+//import MainApp from "./Component/009-use-context/MainApp";
 
-//const HookApp = () => (<><MainApp/></>);
-const HookApp = () => (<div><h1>Hola Mundo</h1></div>);
+const HookApp = () => (<><TodoApp/></>);
+//const HookApp = () => (<div><h1>Hola Mundo</h1></div>);
 export default HookApp;

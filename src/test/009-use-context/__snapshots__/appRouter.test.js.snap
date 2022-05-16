@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test AppRouter Test AppRouter to match snapshot 1`] = `
+Array [
+  <nav
+    className="navbar bg-dark navbar-expand-lg"
+  >
+    <ul
+      className="navbar-nav"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/login"
+          onClick={[Function]}
+        >
+          Login
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/user"
+          onClick={[Function]}
+        >
+          User
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <div>
+    <h1>
+      Home Screen
+    </h1>
+    <p>
+      Welcome 
+      Fidel Alembert Lascano Valencia
+    </p>
+  </div>,
+]
+`;

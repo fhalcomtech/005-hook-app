@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test UserScreen Test UserScreen to match snapshot 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="form-control mt-2"
+      name="name"
+      onChange={[Function]}
+      placeholder="name"
+      type="text"
+    />
+    <input
+      className="form-control mt-2"
+      name="lastname"
+      onChange={[Function]}
+      placeholder="lastname"
+      type="text"
+    />
+    <button
+      className="btn btn-primary mt-2"
+      type="submit"
+    >
+      Update
+    </button>
+  </form>
+</div>
+`;

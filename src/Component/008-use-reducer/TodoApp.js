@@ -46,7 +46,7 @@ const TodoApp = () => {
 
     return (
         <>
-            <h1 className="text-center">Todo App</h1>
+            <h1 className="text-center">Todo App: {todos.length}</h1>
             <hr/>
             <div className="row">
                 <TodoList handlerClickDone={handlerClickDone} handlerClickDelete={handlerClickDelete} todos={todos}/>

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TodoApp component TodoApp should to match snapshot 1`] = `
+<Fragment>
+  <h1
+    className="text-center"
+  >
+    Todo App: 
+    0
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <TodoList
+      handlerClickDelete={[Function]}
+      handlerClickDone={[Function]}
+      todos={Array []}
+    />
+    <TodoAdd
+      handlerSaveTodo={[Function]}
+    />
+  </div>
+</Fragment>
+`;
